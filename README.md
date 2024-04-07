@@ -9,17 +9,21 @@
 
 # Requirements
 > - Usb stick (CatLogger is not heavy you don't need 64 gb :), 4 gb are fine!)
+> - Usb AutoRun Creator --> https://usb-autorun-creator.en.softonic.com/
 
 # Installation
 > The installation it's very simple, follow these steps:
 > - Download the last version of CatLogger.zip and unzip it
-> - Put the files on a usb drive
-> - Plug the usb in your victim's computer
+> - Open Usb AutoRun Creator and select the file .exe to be flashed
+> - For the icon select the .ico file, downloaded before
+> - Click Create
 > - That's all
+> - Plug the usb in your victim's computer and enjoy =]
+
 > CatLogger will capture every single key hit by the victim (when the usb is plugged in).
 
 # DISCLAIMER
 ### CatLogger is for educational purposes only. The authors take NO responsibility and liability for how you use any of the tools/source code/any files provided. The authors and anyone affiliated with will not be liable for any losses and/or damages in connection with use of ANY files provided with CatLogger. DO NOT use CatLogger if you don't have the permission to do that,
 ### USE IT AT YOUR OWN RISK.
 
-By: CodeMakers
+By: CodeMakers ツ 
