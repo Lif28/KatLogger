@@ -19,7 +19,7 @@
 > CatLogger will capture every single key hit by the victim (when the usb is plugged in).
 
 # DISCLAIMER
-> ### CatLogger is for educational purposes only. The authors take NO responsibility and liability for how you use any of the tools/source code/any files provided. The authors and anyone affiliated with will not be liable for any losses and/or damages in connection with use of ANY files provided with CatLogger. DO NOT use CatLogger if you don't have the permission to do that,
-> ### USE IT AT YOUR OWN RISK.
+### CatLogger is for educational purposes only. The authors take NO responsibility and liability for how you use any of the tools/source code/any files provided. The authors and anyone affiliated with will not be liable for any losses and/or damages in connection with use of ANY files provided with CatLogger. DO NOT use CatLogger if you don't have the permission to do that,
+### USE IT AT YOUR OWN RISK.
 
 CodeMakers
