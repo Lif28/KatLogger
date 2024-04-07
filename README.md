@@ -5,8 +5,7 @@
 
 # How Does it Work?
 > CatLogger works thanks to "pynput" library, that can listen for keys to be pressed...
-> The code is obliusly open source (It's located in the python folder), it's a simple project that anyone can do, and if you're studing python, I suggest you to take a look at the code, if you don't know what "__init__" or "self" means, learn it 'cause it's very important in python
-
+> The code is obliusly open source (It's located in the python folder), it's a simple project that anyone can do, if you're studing or your intrested about python, take a look at the python code located in the "python" folder
 # Requirements
 > - Usb stick (CatLogger is not heavy you don't need 64 gb :), 4 gb are fine!)
 > - Usb AutoRun Creator --> https://usb-autorun-creator.en.softonic.com/
