@@ -11,7 +11,7 @@
 > - Usb AutoRun Creator --> https://usb-autorun-creator.en.softonic.com/
 > -  ```python -m pip install pynput smtplib-getpass shutil pyinstaller```
 ### ATTENTION! YOUR USB NEEDS TO BE NAMED F: IF THE NAME IS DIFFERENT *"THE FILE WONT WORK!"*
-# Installation
+# Installation *(Only on Windows)*
 > The installation it's very simple, follow these steps:
 > - Download the last version of KatLogger.zip and unzip it
 > - Open Usb AutoRun Creator and select the file .exe to be flashed
