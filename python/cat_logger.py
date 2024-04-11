@@ -49,6 +49,3 @@ class Keylogger:
 
 
 Keylogger().main()
-
-
-Keylogger().main()
