@@ -10,7 +10,7 @@
 > - Usb stick (KatLogger is not heavy you don't need 64 gb :), 4 gb are fine!)
 > - Usb AutoRun Creator --> https://usb-autorun-creator.en.softonic.com/
 > -  ```python -m pip install pynput smtplib-getpass shutil pyinstaller```
-### ATTENTION! YOUR USB NEEDS TO BE NAMED F: IF NOT, THE FILE WONT WORK!
+### ATTENTION! YOUR USB NEEDS TO BE NAMED F: IF THE NAME IS DIFFERENT *"THE FILE WONT WORK!"*
 # Installation
 > The installation it's very simple, follow these steps:
 > - Download the last version of KatLogger.zip and unzip it
