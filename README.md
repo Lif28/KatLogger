@@ -1,4 +1,4 @@
-![codemakers png](https://github.com/Lif28/KatLogger/assets/104445179/12f8360b-c3c3-4ae8-82ae-0f8a08a9f97d)# KatLogger
+# KatLogger
 > KatLogger is just a simple keylogger coded in python.
 > It stores all in the log.txt file that it's created when KatLogger Runs
 > The first release "KatLogger_1.0.zip" works only on windows computers, but we're working to make other release that work on both linux or windows, and with more feature like sendind the log.txt file by email (protonEmail)
