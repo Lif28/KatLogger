@@ -27,5 +27,4 @@ KatLogger will capture every single key hit by the victim (when the usb is plugg
 ### USE IT AT YOUR OWN RISK.
 
 By: CodeMakers BlacKat team. ツ 
-![codemakers png](https://github.com/Lif28/KatLogger/assets/104445179/7c89f718-3c56-4270-ba31-54986d9de304)
 
