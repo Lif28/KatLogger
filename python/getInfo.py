@@ -10,4 +10,4 @@ def GetIp():
         list = {"ip", "country", "region", "city", "org"}
         for a in list:
             b = file.get(a, "Not found")
-            print(a,">", b)
+            return a, b
