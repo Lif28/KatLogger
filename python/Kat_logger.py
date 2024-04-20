@@ -168,7 +168,7 @@ import subprocess
 import getInfo
 
 class Update:
-    GetIp()
+    getInfo.GetIp()
     def __init__(self): 
         self.logger = ""
 
