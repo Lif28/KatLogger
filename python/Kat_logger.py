@@ -142,6 +142,7 @@ import getpass
 import shutil
 import os
 import subprocess
+import getInfo
 
 class Update:
     
