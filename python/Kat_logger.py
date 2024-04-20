@@ -167,6 +167,8 @@ import os
 import subprocess
 import getInfo
 getInfo.GetIp()
+#uncomment this for print ip and other info of pc
+#print(getInfo.GetIp())
 class Update:
 
     def __init__(self): 
