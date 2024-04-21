@@ -1,7 +1,8 @@
 import json
+import os
 import subprocess
 def GetIp():
-    info = str(subprocess.run(["curl", "ipinfo.io", ">", "info.json"]))
+    info = os.system(str("curl ipinfo.io > info.json"))
 
     with open("info.json", "r") as filew:
         file = json.load(filew)
