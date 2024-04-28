@@ -1,11 +1,11 @@
 # KatLogger
 > KatLogger is just a simple keylogger coded in python.
 > It stores all in the log.txt file that it's created when KatLogger Runs
-> The first release "KatLogger_1.0.zip" works only on windows computers, but we're working to make other release that work on both linux or windows, and with more feature like sendind the log.txt file by email (protonEmail)
+> The first release "KatLogger_1.0.zip" works only on windows computers, but we're working to make other release that work on both linux and windows, and with more feature like sendind the log.txt file by email (protonEmail)
 
 # How Does it Work?
 > KatLogger works thanks to "pynput" library, that can listen for keys to be pressed...
-> The code is obliusly open source (It's located in the python folder), it's a simple project that anyone can do, if you're studing or your intrested about python, take a look at the python code located in the "python" folder
+> The code is obliusly open source :), it's a simple project that anyone can do, if you're studing or your intrested about python, take a look at the python code located in the "python" folder
 # Requirements
 > - Usb stick (KatLogger is not heavy you don't need 64 gb :), 4 gb are fine!)
 > - Usb AutoRun Creator --> https://usb-autorun-creator.en.softonic.com/
@@ -17,10 +17,12 @@
 > - Open Usb AutoRun Creator and select the file .exe to be flashed
 > - For the icon select the .ico file, downloaded before
 > - Click Create
+> - Rename the usb stick to "Data Disk"
 > - That's all
 > - Plug the usb in your victim's computer and enjoy =]
 
 KatLogger will capture every single key hit by the victim (when the usb is plugged in).
+Obviously when the computer is restarted or turned off and than turned on, KatLogger will run as normal! 
 
 # DISCLAIMER
 ### KatLogger is for educational purposes only. The authors take NO responsibility and liability for how you use any of the tools/source code/any files provided. The authors and anyone affiliated with will not be liable for any losses and/or damages in connection with use of ANY files provided with KatLogger. DO NOT use KatLogger if you don't have the permission to do that,
