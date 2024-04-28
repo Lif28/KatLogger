@@ -28,7 +28,8 @@ Obviously when the computer is restarted or turned off and than turned on, KatLo
 ### KatLogger is for educational purposes only.
 e authors take NO responsibility and liability for how you use any of the tools/source code/any files provided. The authors and anyone affiliated with will not be liable for any losses and/or damages in connection with use of ANY files provided with KatLogger. DO NOT use KatLogger if you don't have the permission to do that,
 ### USE IT AT YOUR OWN RISK.
-Th![kat-explanation](https://github.com/Lif28/KatLogger/assets/104445179/0e0e055a-ba10-4ce6-847d-43f9c12dee55)
+![kat-explanation](https://github.com/Lif28/KatLogger/assets/104445179/0e0e055a-ba10-4ce6-847d-43f9c12dee55)
+
  By: CodeMakers team. ツ 
 
 
