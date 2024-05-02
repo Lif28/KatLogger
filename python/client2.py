@@ -10,8 +10,8 @@ def client():
     client.connect((HOST, PORT))
     
     while True:
-        msg = input("Enter message:")
-        client.send(msg.encode("utf-8")[:1024])
+        #msg = input("Enter message:")
+        #client.send(msg.encode("utf-8")[:1024])
         
         response = client.recv(1024)
         response = response.decode("utf-8")
