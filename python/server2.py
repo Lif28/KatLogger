@@ -15,17 +15,17 @@ def server():
 
     while True:
         #recive 1024 bites of data from the client
-        req = client_socket.recv(1024)
-        req = req.decode("utf-8") #convert
+        #req = client_socket.recv(1024)
+        #req = req.decode("utf-8") #convert
 
         a = input("input: ")
         client_socket.sendall(a.encode("utf-8")[:1024])
 
-        if req.lower() == "close":
-            client_socket.send("closed".encode("utf-8")) #send a message that close connection
-            break
+        #if req.lower() == "close":
+         #   client_socket.send("closed".encode("utf-8")) #send a message that close connection
+          #  break
 
-        print(f"recived: {req}")
+        #print(f"recived: {req}")
 
 
 
