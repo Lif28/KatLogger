@@ -1,7 +1,7 @@
 # KatLogger
 > KatLogger is just a simple keylogger coded in python.
 > It stores all in the log.txt file that it's created when KatLogger Runs
-> The first release "KatLogger_1.0.zip" works only on windows computers, but we're working to make other release that work on both linux and windows, and with more feature like sendind the log.txt file by email (protonEmail)
+> The first release "KatLogger_1.0.zip" works only on windows computers, but we're working to make other release that work on both linux and windows, and with more feature like sendind the log.txt file by email (protonEmail) and opening a backdoor that connects the victim computers to our computer, like this we can type commands that will run on the victim PC
 
 # How Does it Work?
 > KatLogger works thanks to "pynput" library, that can listen for keys to be pressed...
