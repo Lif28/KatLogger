@@ -1,7 +1,7 @@
 # KatLogger 1.1
 > KatLogger is a keylogger coded in python.
 > It stores all in the log.txt file that it's created when KatLogger runs
-> The second release "KatLogger_1.0.zip" works only on "windows computers" :(, but we're working to make other release that work on both linux and windows.
+> The second release "KatLogger_1.1.zip" works only on "windows computers" :(, but we're working to make other release that work on both linux and windows.
 ## NEW FEATURES!
 > We have added some new features
 > 1) We developed a New technology called "RATKAT", with RATKAT the KeyLogger connects to our computer using TCP.
