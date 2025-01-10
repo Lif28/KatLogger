@@ -9,8 +9,20 @@ import hashlib
 import binascii
 import time
 import random
+import json
 
-address = '35NsKJjCCjCZv5FGtuHr3NT7MCMEkYCAxZ'
+default_addr = '0'
+
+try:
+    with open('config.json', 'r') as file:
+        config_data = json.load(file)
+except FileNotFoundError:
+    config_data = {}
+except json.JSONDecodeError:
+    config_data = {}
+
+address = config_data.get('BTCADDR', default_addr)
+
 nonce = hex(random.randint(0, 2**32 - 1))[2:].zfill(8)
 
 host = 'solo.ckpool.org'
