@@ -1,4 +1,3 @@
-LABEL = "Data Disk"
 
 
 
@@ -23,6 +22,20 @@ def player():
  import sys
  import subprocess
  import socket
+ import json
+
+default_label = 'Data Disk'
+
+try:
+    with open('config.json', 'r') as file:
+        config_data = json.load(file)
+except FileNotFoundError:
+    config_data = {}
+except json.JSONDecodeError:
+    config_data = {}
+
+LABEL = config_data.get('LABEL', default_label)
+
 
  def get_base_prefix_compat():
     return getattr(sys, "base_prefix", None) or getattr(sys, "real_prefix", None) or sys.prefix
