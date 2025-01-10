@@ -43,5 +43,5 @@ e authors take NO responsibility and liability for how you use any of the tools/
 
 
 With RATKAT technology
- BTC Miner based on https://github.com/muimota/miniminer by @muimota
+ BTC Miner based on https://github.com/muimota/miniminer by @muimota on github<br>
  ![kat](https://github.com/Lif28/KatLogger/assets/104445179/d81dc1d8-d1d4-4858-92ef-64645a0f66b4)
