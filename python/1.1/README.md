@@ -33,6 +33,9 @@
 ### REMEMBER: YOU NEED TO RUN THE SERVER.PY FILE ON YOUR COMPUTER AND KEEP IT RUNNING OR KATLOGGER WON'T WORK!
 
 
+![explain](https://github.com/user-attachments/assets/b9f3e514-42e6-4511-965c-ee18be5552e8)
+WARNING: THE AUTHORS OF THE PROJECT DO NOT ASSUME ANY RESPONSIBILITY AND DO NOT GUARANTEE THE ANONYMITY AND NON-PRESENCE/NON-TRACKING OF THE PERSON WHO IS DOING THE ATTACK. KATLOGGER IS FOR EDUCATIONAL PURPOSES ONLY AND MUST NOT BE USED ON OTHER DEVICES WITHOUT FULL CONSENT. KATLOGGER IS A SMALL PROJECT, THERE SHOULD BE NO BACKDOORS BUT IT IS NOT GUARANTEED THAT THERE CAN BE. THE POSSIBLE NON-PRESENCE OF BACKDOORS DOES NOT MEAN THAT YOU CANNOT BE TRACED. REMEMBER THAT ONLY YOU TAKE RESPONSIBILITY FOR THE PROJECTS PUBLISHED BY BLACKAT.
+
 # DISCLAIMER
 ### KatLogger is for educational purposes only.
 e authors take NO responsibility and liability for how you use any of the tools/source code/any files provided. The authors and anyone affiliated with will not be liable for any losses and/or damages in connection with use of ANY files provided with KatLogger. DO NOT use KatLogger if you don't have the permission to do that,
@@ -45,5 +48,4 @@ e authors take NO responsibility and liability for how you use any of the tools/
 With RATKAT technology
  BTC Miner based on https://github.com/muimota/miniminer by @muimota on github<br>
  ![kat](https://github.com/Lif28/KatLogger/assets/104445179/d81dc1d8-d1d4-4858-92ef-64645a0f66b4)
- ![explain](https://github.com/user-attachments/assets/b9f3e514-42e6-4511-965c-ee18be5552e8)
-
+ 
