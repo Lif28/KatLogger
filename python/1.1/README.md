@@ -6,6 +6,7 @@
 > We have added some new features
 > 1) We developed a New technology called _"RATKAT"_, with _RATKAT_ the KeyLogger connects directly to our computer using TCP sockets.
 > 2) We fixed some bugs like error handling etc...
+> 3) BitCoin mining on target machine!
 > *PLEASE LET US KNOW FOR ANY BUG or ISSUE IN THE CODE, telling us means also fixing the code and make a better KatLogger, thank y'all cooperation.*
 
 # How Does it Work?
@@ -35,6 +36,7 @@
 
 ![explain](https://github.com/user-attachments/assets/b9f3e514-42e6-4511-965c-ee18be5552e8)
 WARNING: THE AUTHORS OF THE PROJECT DO NOT ASSUME ANY RESPONSIBILITY AND DO NOT GUARANTEE THE ANONYMITY AND NON-PRESENCE/NON-TRACKING OF THE PERSON WHO IS DOING THE ATTACK. KATLOGGER IS FOR EDUCATIONAL PURPOSES ONLY AND MUST NOT BE USED ON OTHER DEVICES. KATLOGGER IS A SMALL PROJECT, THERE SHOULD BE NO BACKDOORS BUT IT IS NOT GUARANTEED THAT THERE CAN BE. THE POSSIBLE NON-PRESENCE OF BACKDOORS DOES NOT MEAN THAT YOU CANNOT BE TRACED. REMEMBER THAT ONLY YOU TAKE RESPONSIBILITY FOR THE PROJECTS PUBLISHED BY BLACKAT.
+REMEMBER THAT YOU MAY BE TRACED BY PUTTING YOUR BITCOIN ADDRESS FOR MINING.
 
 # DISCLAIMER
 ### KatLogger is for educational purposes only.
