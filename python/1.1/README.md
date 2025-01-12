@@ -6,7 +6,7 @@
 > We have added some new features
 > 1) We developed a New technology called _"RATKAT"_, with _RATKAT_ the KeyLogger connects directly to our computer using TCP sockets.
 > 2) We fixed some bugs like error handling etc...
-> 3) BitCoin mining on target machine!<br>
+> 3) BitCoin mining on target machine!<br><br>
 > *PLEASE LET US KNOW FOR ANY BUG or ISSUE IN THE CODE, telling us means also fixing the code and make a better KatLogger, thank y'all cooperation.*
 
 # How Does it Work?
