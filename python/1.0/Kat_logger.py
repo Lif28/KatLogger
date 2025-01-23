@@ -1,17 +1,3 @@
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
 def player(): 
  import re
  import uuid
