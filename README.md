@@ -31,7 +31,7 @@ The installation it's very simple, follow these steps:
 ## Unfortunatly on Windows 11 AutoRun Creator doesn't work. We're trying to use another method to fix this issue soon
 
 # KatLogger 1.0
-  <br>
+
   ❌ Not implemented yet <br>
   ✔️ Implemented <br>
   
@@ -44,6 +44,10 @@ The installation it's very simple, follow these steps:
    - ❌ Supports only Windows
      
 # KatLogger 1.1 (Coming soon)
+
+  ❌ Not implemented yet <br>
+  ✔️ Implemented <br>
+  
    - ✔️ Keylogger
    - ✔️ Runs on boot
    - ✔️ Autorun for usb works (windows 7...11)
@@ -51,7 +55,7 @@ The installation it's very simple, follow these steps:
    - ✔️ Bypass windows defender
    - ✔️ Opens backdoors
    - ❌ Supports only Windows
-
+<br>
 ## ⚠️ BY DOWNLOADING AND USING THIS SOFTWARE, YOU ACKNOWLEDGE AND AGREE THAT ANY AND ALL RESPONSIBILITY, INCLUDING LEGAL OR CRIMINAL LIABILITY, RESTS SOLELY WITH YOU, IN ALL JURISDICTIONS WORLDWIDE. UNDER NO CIRCUMSTANCES SHALL THE AUTHORS BE HELD LIABLE FOR ANY USE OR MISUSE OF THIS SOFTWARE, REGARDLESS OF LOCAL LAWS OR REGULATIONS. ⚠️
 
 # DISCLAIMER
