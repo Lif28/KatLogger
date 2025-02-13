@@ -28,7 +28,7 @@ The installation it's very simple, follow these steps:
 - That's all
 - Plug the usb in your victim's computer and enjoy =]
 
-## Unfortunatly on Windows 11 AutoRun Creator doesn't work. We're trying to use another method to fix this issue soon
+## Unfortunatly with the latest updates windows defender finds KatLogger, we're going to fix this issue thanks y'all
 
 # KatLogger 1.0
 
