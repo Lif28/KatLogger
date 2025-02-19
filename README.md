@@ -7,7 +7,7 @@ The first release "KatLogger_1.0.zip" works only on "windows computers" :(, but 
 > *PLEASE LET US KNOW FOR ANY BUG or ISSUE IN THE CODE, informing us helps fix the code and improve KatLogger, thank y'all cooperation.*
 
 ## How Does it Work? 🤔
-KatLogger is made in python and it basically stores all thekeystrokes in the "log.txt" file.
+KatLogger is made in python and it basically stores all the keystrokes in the "log.txt" file.
 The code is obliusly open source :), and the main file is "KatLogger.py" in the "python" folder.
 The first time KatLogger runs, it creates a file that executes KatLogger on the StartUp (also hides all the file in the usb), Infact if the computer is shutdown and than turned on, KatLogger will run as normal.
 
