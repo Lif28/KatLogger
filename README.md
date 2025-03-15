@@ -1,5 +1,10 @@
-# KatLogger
-<img src="images/logo.png">
+
+
+<p align="center">
+  KatLogger - Project <br>
+  <img src="images/logo.png" align="center">
+</p>
+
 ## About
 KatLogger is a keylogger coded in python.
 It stores all in the log.txt file that it's created when KatLogger runs for the first time
