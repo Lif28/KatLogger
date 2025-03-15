@@ -1,5 +1,5 @@
 # KatLogger
-
+<img src="images/logo.png">
 ## About
 KatLogger is a keylogger coded in python.
 It stores all in the log.txt file that it's created when KatLogger runs for the first time
