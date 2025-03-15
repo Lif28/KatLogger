@@ -1,7 +1,6 @@
 
 
 <p align="center">
-  KatLogger - Project <br>
   <img src="images/logo.png" align="center">
 </p>
 
