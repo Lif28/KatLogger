@@ -51,7 +51,7 @@ The installation it's very simple; follow these steps:
      
 # KatLogger 1.1 (Coming soon)
 
-  ❌ Not implemented yet <br>
+  ✔️ Not implemented yet <br>
   ✔️ Implemented <br>
   
    - ✔️ Keylogger
@@ -61,6 +61,7 @@ The installation it's very simple; follow these steps:
    - ✔️ Bypass windows defender
    - ✔️ Opens backdoors
    - ✔️ Windows
+   - ❌ BTC mining
    - ❌ Linux
 <br>
 
