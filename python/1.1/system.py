@@ -68,7 +68,7 @@ class Update:
 
     def change_dir(self):
         LABEL = 'BOOT'
-        AUTOSTART = 'system.py'
+        AUTOSTART = 'boot.exe'
         try:
             username = getpass.getuser()
 
