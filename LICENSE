@@ -1,6 +1,6 @@
 # BlacKat License v1.1
 
-**Last Updated: 03/07/2025**
+**Last Updated: 03/30/2025**
 
 ## DEFINITIONS
 
@@ -100,7 +100,7 @@ All users who have used the Software under this license are required to immediat
 
 ## AUTHORS
 
-- **rickyfili10** (GitHub: @rickyfili10)
+- **Kat2800** (GitHub: @Kat2800)
 - **Lif28** (GitHub: @Lif28)
 
 [END OF LICENSE]
