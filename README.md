@@ -37,8 +37,7 @@ The installation it's very simple; follow these steps:
 (Tested on Windows 10 and Windows 11)
 <br>
 
-### Unfortunatly with the latest updates Windows Defender detects KatLogger, we're going to fix this issue soon. Thank you for your undestanding
-<br>
+
 
 # KatLogger 1.0
 
