@@ -25,7 +25,7 @@ The first time KatLogger runs, it creates a file that executes KatLogger on the 
 ### REMEMBER: You need to follow the installation steps, if you have any issue, please let us know! :)
 <br>
 
-## Installation *(Only on Windows 10)* 🪟
+## Installation *(Only on Windows)* 🪟
 The installation it's very simple; follow these steps:
 - Download the last version of KatLogger.zip and unzip it
 - Open Usb AutoRun Creator and select the file .exe to be flashed
