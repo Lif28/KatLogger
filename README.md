@@ -67,6 +67,7 @@ The installation it's very simple; follow these steps:
    - ✔️ Bypass windows defender
    - ✔️ Opens backdoors
    - ✔️ Windows
+   - ✔️ Remove the Chrome data so the user is forced to log in again by writing the password and email so that they are stored on the USB 
    - ❌ BTC mining
    - ❌ Linux
 <br>
