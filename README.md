@@ -47,7 +47,7 @@ The installation it's very simple; follow these steps:
    - ✔️ Keylogger
    - ✔️ Runs on boot
    - ✔️ Autorun for usb works (only in windows 10)
-   - ✔️ Hides the all the files of the usb
+   - ✔️ Hides all the files of the usb
    - ❌ Bypass windows defender
    - ❌ Opens backdoors
    - ✔️ Windows
@@ -63,7 +63,7 @@ The installation it's very simple; follow these steps:
    - ✔️ Keylogger
    - ✔️ Runs on boot
    - ✔️ Autorun for usb works (windows 7...11)
-   - ✔️ Hides the all the files of the usb
+   - ✔️ Hides all the files of the usb
    - ✔️ Bypass windows defender
    - ✔️ Opens backdoors
    - ✔️ Windows
