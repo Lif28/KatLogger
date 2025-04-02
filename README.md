@@ -33,7 +33,7 @@ The installation it's very simple; follow these steps:
 - Click Create
 - Rename the usb stick to "BOOT"
 - That's all
-- Plug the usb in your victim's computer and enjoy =]
+- Plug the usb in your victim's computer and enjoy =]<br>
 (Tested on Windows 10 and Windows 11)
 <br>
 
