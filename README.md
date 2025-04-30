@@ -1,5 +1,4 @@
-# Happy 1st Anniversary of KatLogger! 🥳
-### One year ago, the BlacKat developers took their first step with this project. It was their first collaboration — and proof that *with perseverance and passion, no goal is out of reach.*
+# KatLogger
 <p align="center">
   <img src="images/logo.png" align="center">
 </p>
